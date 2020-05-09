@@ -11,14 +11,24 @@ var _ = grift.Namespace("db", func() {
 	grift.Desc("seed", "Seeds a database")
 	grift.Add("seed", func(c *grift.Context) error {
 		u := &models.Users{
-			{FirstName: "Daddy",
-				LastName: "Pants",
-				Email:    "daddy@gmail.com",
+			{FirstName: "Luke",
+				LastName: "Wendling",
+				Email:    "luke@gmail.com",
 				City:     "Blue Hill",
 				State:    "ME"},
 			{FirstName: "Detroit",
-				LastName: "Pants",
+				LastName: "Wendling",
 				Email:    "detroit@gmail.com",
+				City:     "Blue Hill",
+				State:    "ME"},
+			{FirstName: "Greta",
+				LastName: "Hulme",
+				Email:    "thisisgreta@gmail.com",
+				City:     "Blue Hill",
+				State:    "ME"},
+			{FirstName: "Axel",
+				LastName: "Raine",
+				Email:    "arw@gmail.com",
 				City:     "Blue Hill",
 				State:    "ME"},
 		}
