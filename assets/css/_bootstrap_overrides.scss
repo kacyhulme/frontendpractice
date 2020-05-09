@@ -1,0 +1,211 @@
+
+
+// mixins for bootstrap breakpoints - mobile first - the given screen size or larger
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {  }
+@include media-breakpoint-up(lg) {  }
+@include media-breakpoint-up(xl) {  }
+
+// mixins for bootstrap breakpoints - desktop first - the given screen size or smaller
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  }
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) {  }
+@include media-breakpoint-down(md) {  }
+@include media-breakpoint-down(lg) {  }
+
+
+/********************
+ Base Font
+*********************/
+// To switch the global Bootstrap font-family, update $font-family-base and recompile Bootstrap
+$font-family-base: "Brandon Text", sans-serif; // base font
+$base-font-size: 16px;
+
+/********************
+ Base Colors
+*********************/
+
+
+
+/********************
+ Base Measurements: increments of 8
+*********************/
+// 8px = .5rem
+
+// bootstrap has utility classes for spacing
+// university has some that it looks like were built before boostrap came out with these
+// use https://www.sassmeister.com/ to see how these measurements calculate
+
+// copied from bootstrap, edit to fit 8pt grid
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),   // mx-1 would be .25rem / 4px
+    2: ($spacer * .5),    // mx-2 would be .5rem / 8px
+    3: $spacer,           // mx-3 would be 1rem / 16px
+    4: ($spacer * 1.5),   // mx-4 would be 1.5rem / 24px
+    5: ($spacer * 3)      // mx-5 would be 3rem / 48px
+  ),
+  $spacers
+);
+
+
+// manage uses the following overrides in th bootstrap_overrides file
+$green: hsl(151, 69%, 51%);
+$blue: hsl(232, 62%, 23%);
+$bg-grey: hsl(0, 0%, 98%);
+$black: hsl(0, 0%, 18%);
+
+$font-family-base: "Brandon Text", sans-serif;
+$body-color: $black;
+
+$navbar-light-active-color: $green;
+$navbar-light-color: $blue;
+
+/**Grid Overrides*/
+$grid-gutter-width: 24px;
+
+/**Container Overrides*/
+$container-max-widths: (
+    lg: 1344px
+);
+
+// kpis uses the following overrides in the variables file
+/********************
+ Bootstrap Color Var Overrides
+*********************/
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$blue: #0095ff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #abdb7b;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$navy: #114078;
+$black: #393939;
+$icey-blue: #f5faff;
+$light-grey: #fafafa;
+$bright-green: #2ad09a;
+
+$gu-green: hsl(86, 54.2, 51.2);
+$gu-grey: hsl(0, 0, 82.4);
+
+$pa-blue: #0094ff;
+$pa-cyan: #45eefb;
+$pa-dark-blue: #008ef2;
+
+$rich-green: #648767;
+$pale-blue: #b8e1ff;
+$dull-purple: #6c698d;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+  "black": $black,
+  "navy": $navy,
+  "icey-blue": $icey-blue,
+  "light-grey": $light-grey,
+  "bright-green": $bright-green
+);
+
+$primary: $pa-blue;
+$secondary: $rich-green;
+$success: $gu-green;
+$info: $pale-blue;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "gu-green": $gu-green
+);
+
+/********************
+ Bootstrap Component Var Overrides
+*********************/
+$dropdown-link-color: $blue;
+$dropdown-link-hover-color: $navy;
+$dropdown-link-hover-bg: desaturate($icey-blue, 50%);
+
+$font-family-heading: "Brandon Text", sans-serif;
+$font-family-sans-serif: "Brandon Text", sans-serif;
+
+$enable-gradients: true;
+
+@mixin respond_to($point) {
+  @if $point == desktop {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media screen and (max-width: 540px) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+

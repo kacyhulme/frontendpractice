@@ -1,0 +1,74 @@
+/* Playfair Display */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+/* Brandon Grotesque */
+@font-face {
+    font-family: 'BrandonGrotesque';
+    src: url('/assets/fonts/BrandonGrotesque/Brandon_reg.otf') format('opentype');
+    font-weight: normal;
+}
+
+// Black
+@font-face {
+    font-family: 'BrandonGrotesque';
+    src: url('/assets/fonts/BrandonGrotesque/Brandon_blk.otf') format('opentype');
+    font-weight: 900;
+}
+
+/* Brandon Text */
+// Light
+@font-face {
+  font-family: "Brandon Text";
+  font-weight: 300;
+  src: url("/assets/fonts/BrandonText-Light.otf") format('opentype');
+}
+
+// Regurlar
+@font-face {
+  font-family: "Brandon Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/BrandonText-Regular.otf") format('opentype');
+}
+
+// Italic
+@font-face {
+  font-family: "Brandon Text";
+  font-style: italic;
+  font-weight: normal;
+  src: url("/assets/fonts/BrandonText-RegularItalic.otf") format('opentype');
+}
+
+// Medium
+@font-face {
+  font-family: "Brandon Text";
+  font-weight: 500;
+  src: url("/assets/fonts/BrandonText-Medium.otf") format('opentype');
+}
+
+// Bold
+@font-face {
+  font-family: "Brandon Text";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/assets/fonts/BrandonText-Bold.otf") format('opentype');
+}
+
+// Black
+@font-face {
+  font-family: "Brandon Text";
+  font-weight: 900;
+  src: url("/assets/fonts/BrandonText-Black.otf") format('opentype');
+}
