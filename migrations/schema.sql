@@ -30,23 +30,6 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: posts; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
---
-
-CREATE TABLE posts (
-    id uuid NOT NULL,
-    date character varying(255) NOT NULL,
-    subject character varying(255) NOT NULL,
-    url character varying(255) NOT NULL,
-    description character varying(255) NOT NULL,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
-);
-
-
-ALTER TABLE public.posts OWNER TO postgres;
-
---
 -- Name: schema_migration; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
 --
 
@@ -74,14 +57,6 @@ CREATE TABLE users (
 
 
 ALTER TABLE public.users OWNER TO postgres;
-
---
--- Name: posts_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
---
-
-ALTER TABLE ONLY posts
-    ADD CONSTRAINT posts_pkey PRIMARY KEY (id);
-
 
 --
 -- Name: users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
