@@ -2,24 +2,22 @@ package models
 
 import (
 	"encoding/json"
-	"time"
-
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/validate"
-	"github.com/gobuffalo/validate/validators"
 	"github.com/gofrs/uuid"
+	"time"
+	"github.com/gobuffalo/validate/validators"
 )
-
 // User is used by pop to map your .model.Name.Proper.Pluralize.Underscore database table to your go code.
 type User struct {
-	ID        uuid.UUID `json:"id" db:"id"`
-	FirstName string    `json:"first_name" db:"first_name"`
-	LastName  string    `json:"last_name" db:"last_name"`
-	Email     string    `json:"email" db:"email"`
-	City      string    `json:"city" db:"city"`
-	State     string    `json:"state" db:"state"`
-	CreatedAt time.Time `json:"created_at" db:"created_at"`
-	UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
+    ID uuid.UUID `json:"id" db:"id"`
+    FirstName string `json:"first_name" db:"first_name"`
+    LastName string `json:"last_name" db:"last_name"`
+    Email string `json:"email" db:"email"`
+    City string `json:"city" db:"city"`
+    State string `json:"state" db:"state"`
+    CreatedAt time.Time `json:"created_at" db:"created_at"`
+    UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
 }
 
 // String is not required by pop and may be deleted

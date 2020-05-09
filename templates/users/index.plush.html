@@ -1,4 +1,4 @@
-<div class="py-4 mb-2 usersindexfile">
+<div class="py-4 mb-2">
   <h3 class="d-inline-block">Users</h3>
   <div class="float-right">
     <%= linkTo(newUsersPath(), {class: "btn btn-primary"}) { %>
@@ -27,32 +27,6 @@
     <% } %>
   </tbody>
 </table>
-
-
-<h2>auto fit</h2>
-<div class="test-container">
-<%= for (user) in users { %>
-  <div class="test-item">
-    <div><%= user.LastName %></div>
-    <div><%= user.Email %></div>
-    <div><%= user.City %></div>
-    <div><%= user.State %></div>
-  </div>
-  <% } %>
-</div>
-
-<h2>auto fill</h2>
-<div class="test-container-2">
-  <%= for (user) in users { %>
-  <div class="test-item">
-    <div><%= user.LastName %></div>
-    <div><%= user.Email %></div>
-    <div><%= user.City %></div>
-    <div><%= user.State %></div>
-  </div>
-  <% } %>
-</div>
-
 
 <div class="text-center">
   <%= paginator(pagination) %>
