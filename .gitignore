@@ -26,3 +26,4 @@ generated/
 .vendor/
 
 .to_dos
+.notes

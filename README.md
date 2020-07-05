@@ -33,3 +33,8 @@ We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and 
 Good luck!
 
 [Powered by Buffalo](http://gobuffalo.io)
+
+To run postgres in docker container
+docker-compose up -d
+configuration located in docker-compose.yml file
+run docker-compose exec db bash to enter container

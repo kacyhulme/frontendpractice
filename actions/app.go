@@ -2,6 +2,7 @@ package actions
 
 import (
 	"github.com/gobuffalo/buffalo"
+	"github.com/gobuffalo/buffalo-pop/v2/pop/popmw"
 	"github.com/gobuffalo/envy"
 	forcessl "github.com/gobuffalo/mw-forcessl"
 	paramlogger "github.com/gobuffalo/mw-paramlogger"
@@ -9,7 +10,6 @@ import (
 
 	"frontendpractice/models"
 
-	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	csrf "github.com/gobuffalo/mw-csrf"
 	i18n "github.com/gobuffalo/mw-i18n"
 	"github.com/gobuffalo/packr/v2"
