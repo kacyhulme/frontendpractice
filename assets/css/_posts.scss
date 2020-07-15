@@ -1,0 +1,50 @@
+$base-space: 1rem;
+
+.box {
+  & > div {
+    border: 1px solid black;
+    margin: $base-space;
+    padding: $base-space;
+    flex: 1 1 auto;
+  }
+  &--one {
+  }
+  &--two {
+  }
+  &--three {
+  }
+  &--four {
+  }
+}
+
+/*
+properties for the container:
+- flex-direction: column, row, column-reverse, row-reverse
+- flex-wrap: wrap, nowrap, wrap-reverse
+- flex-flow (shorthand for setting both flex-direction & flex-wrap), ex: row wrap 
+- justify-content (horizontal alignment): center, flex-start, flex-end, space-around, space-between
+- align-items (vertical-alignment): center, flex-start, flex-end, stretch, baseline
+- align-content (for multi-line/wrapping items, has no effect when items are in a single line): center, flex-start, flex-end, space-around, space-between
+
+Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered.
+
+properties for flex items:
+- order: changes order of the items
+- flex-grow: how much an item will grow relative to the rest of the items, must be a number, default is 0
+- flex-shrink: how much an item will shrink relative to the rest of the items, must be a number, default is 0
+- flex-basis: the initial length of a flex item
+- flex: shorthand property for the flex-grow, flex-shrink, and flex-basis, default: 0 1 auto
+- align-self: specifies the alignment for the selected item inside the flexible container, overrides the default alignment set by the container's align-items property.
+
+{ flex: 1 }: let all the flexible items be the same length, regardless of its content
+{ flex: 0 1 auto }: is default, this everything different widths, 1 1 auto makes them all the the same length, 1 1 0% makes them small boxes all on the same line
+
+to find the % that flex-basis needs to be, add up all the horizontal (left and right) margin and padding (mptotal), subtract that from the entire container: 
+entirecontainer - marginpaddingtotal = onlydivwidthcombined
+example: 1110 - 128 = 982
+onlydivwidthcombined / numofdivsyouwant = eachdivwidth
+example: 982 / 4 = 245.5
+eachdivwidth / entirecontainer * 100 = flex-basis percentage
+245.5 / 1110 * 100 = 22.12%
+
+*/

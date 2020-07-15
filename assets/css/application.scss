@@ -3,6 +3,9 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-@import 'variables';
-@import 'fonts';
-@import 'bootstrap_overrides';
+@import "variables";
+@import "resets";
+@import "posts";
+@import "users";
+@import "helpers";
+@import "bootstrap_overrides";
