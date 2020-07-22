@@ -60,6 +60,7 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		app.GET("/", HomeHandler)
+		app.GET("/growthtools", GrowthToolsDesignsHandler)
 
 		app.Resource("/users", UsersResource{})
 		app.Resource("/posts", PostsResource{})
