@@ -2,15 +2,34 @@
 @import "~@growth-tools/brand/src/assets/scss/components/_buttons.scss";
 
 .gt-designs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   height: 100vh;
-  &--primary-btn {
-    @include primary-btn($white, $university-green);
+  &--large,
+  &--small {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
-  &--secondary-btn {
-    @include secondary-btn($university-green);
+  &--btn_primary {
+    @include btn-primary($white, $university-green);
+  }
+  &--btn_secondary {
+    @include btn-secondary($university-green);
+  }
+  &--btn_tertiary {
+    @include btn-tertiary($university-green);
+  }
+  &--btn_primary_small {
+    @include btn-primary($white, $university-green);
+    @include btn-small;
+  }
+  &--btn_secondary_small {
+    @include btn-secondary($university-green);
+    @include btn-small;
+  }
+  &--btn_tertiary_small {
+    @include btn-tertiary($university-green);
+    @include btn-small;
   }
 }
