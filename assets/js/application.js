@@ -1,11 +1,10 @@
 require("expose-loader?$!expose-loader?jQuery!jquery");
 require("bootstrap/dist/js/bootstrap.bundle.js");
-require('jquery-ui-bundle');
+require("jquery-ui-bundle");
 import React from "react";
 import ReactDOM from "react-dom";
 
 $(() => {
-
   $(function () {
     $("#post-Date").datepicker();
   });
@@ -20,18 +19,15 @@ $(() => {
 
     render() {
       if (this.state.liked) {
-        return 'You liked this.';
+        return "You liked this.";
       }
 
       return (
-        <button onClick={() => this.setState({ liked: true })}>
-          Like
-        </button>
+        <button onClick={() => this.setState({ liked: true })}>Like</button>
       );
     }
   }
 
-  const domContainer = document.querySelector('#practice-container');
+  const domContainer = document.querySelector("#react-root");
   ReactDOM.render(e(LikeButton), domContainer);
-
 });
