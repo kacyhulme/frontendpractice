@@ -4,8 +4,50 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 @import "variables";
+@import "bootstrap_overrides";
 @import "resets";
 @import "posts";
 @import "users";
 @import "helpers";
-@import "bootstrap_overrides";
+@import "fonts";
+@import "home";
+
+body {
+  nav {
+    background-color: burlywood;
+  }
+
+  header {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    //height: 30vh;
+    text-align: center;
+    // position: relative;
+    h3 {
+      height: 100px;
+      // position: absolute;
+    }
+    iframe {
+      // position: absolute;
+      z-index: 10;
+      transform: translate(0, 25%);
+    }
+  }
+
+  .main {
+    height: 100vh;
+    position: relative;
+    background-color: lightgreen;
+    #react-root {
+      background-color: lightsalmon;
+      position: absolute;
+      width: 100%;
+      top: 15%;
+    }
+  }
+  .footer {
+    background-color: lightseagreen;
+  }
+}
