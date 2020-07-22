@@ -1,29 +1,14 @@
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1 col-sm-2 col-xs-2 logo">
-        <a href="<%= rootPath() %>"></a>
-      </div>
-      <div class="col-md-9 col-sm-9 col-xs-10 titles">
-        <h1><%= t("welcome_greeting") %></h1>
-        <h2>
-          <a href="https://github.com/kacyhulme"><i class="fas fa-level-up-alt"></i>Blog</a>
-        </h2>
-      </div>
-    </div>
-  </div>
-
+  <h3>Frontend Practice</h3>
+  
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+    >
+    </iframe>
 </header>
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="subtitle">
-      <div class="container">
-        <h3>Frontend Practice</h3>
-      </div>
-    </div>
-    <%= partial("home.plush.html") %>
-
-  </div>
+<div class="main">
+  <%= partial("home.plush.html") %>
 </div>
-<div class="foot"> <span>&copy; 2020<a href="http://www.kacyhulme.com/"> Kacy Hulme </a></span> </div>
+<%= partial("footer.plush.html") %>
